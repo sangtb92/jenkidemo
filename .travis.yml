@@ -1,0 +1,4 @@
+languae: java
+script:
+  - ./gradlew assemble
+  - ./gradlew check
