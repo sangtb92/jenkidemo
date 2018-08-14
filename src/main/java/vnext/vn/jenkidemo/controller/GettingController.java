@@ -14,7 +14,7 @@ public class GettingController {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping(name = "/getting", method = RequestMethod.GET)
-    public Getting getting(@RequestParam(value = "name", defaultValue = "World") String name) {
+    public Getting getting(@RequestParam(value = "name", defaultValue = "Sangnd") String name) {
         return new Getting(counter.incrementAndGet(),
                 String.format(template, name));
     }
